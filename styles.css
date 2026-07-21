@@ -124,3 +124,11 @@ footer{
 }
 
 }
+.portfolio-card{
+    background:white;
+    padding:30px;
+    border-radius:20px;
+    margin-bottom:30px;
+    text-align:center;
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
