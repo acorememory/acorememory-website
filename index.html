@@ -6,8 +6,16 @@
 
 <title>A CORE MEMORY</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="httpsorder-box;
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
 }
 
 body{
@@ -20,17 +28,18 @@ line-height:1.7;
 nav{
 position:fixed;
 top:0;
+left:0;
 width:100%;
+padding:20px;
 background:rgba(255,255,255,0.95);
 backdrop-filter:blur(10px);
-padding:20px;
-z-index:1000;
 text-align:center;
+z-index:999;
 }
 
 nav a{
-text-decoration:none;
 color:#333;
+text-decoration:none;
 margin:0 15px;
 font-size:14px;
 letter-spacing:2px;
@@ -44,22 +53,24 @@ display:flex;
 justify-content:center;
 align-items:center;
 text-align:center;
+padding:20px;
 }
 
-.hero-box{
-background:rgba(255,255,255,0.75);
-padding:50px;
+.hero-content{
+background:rgba(255,255,255,0.8);
+padding:40px;
 border-radius:20px;
+max-width:700px;
 }
 
 .hero h1{
 font-size:4rem;
 letter-spacing:6px;
-margin-bottom:10px;
+margin-bottom:15px;
 }
 
 .hero p{
-font-size:1.1rem;
+font-size:1.2rem;
 }
 
 section{
@@ -69,13 +80,13 @@ padding:100px 25px;
 }
 
 h2{
-font-size:2rem;
 text-align:center;
 margin-bottom:40px;
+font-size:2rem;
 }
 
 .about{
-max-width:850px;
+max-width:900px;
 margin:auto;
 text-align:center;
 }
@@ -90,6 +101,7 @@ gap:25px;
 position:relative;
 overflow:hidden;
 border-radius:16px;
+text-decoration:none;
 }
 
 .portfolio-item img{
@@ -97,42 +109,42 @@ width:100%;
 height:450px;
 object-fit:cover;
 display:block;
+transition:0.4s;
 }
 
-.portfolio-item span{
+.portfolio-item:hover img{
+transform:scale(1.05);
+}
+
+.label{
 position:absolute;
 bottom:0;
 left:0;
 right:0;
+padding:20px;
 background:rgba(0,0,0,0.45);
 color:white;
-padding:20px;
 text-align:center;
-font-size:1.1rem;
-letter-spacing:2px;
-}
-
-.portfolio-item{
-text-decoration:none;
+font-size:18px;
+letter-spacing:3px;
 }
 
 .contact{
-text-align:center;
-max-width:700px;
+max-width:800px;
 margin:auto;
+text-align:center;
 }
 
 .contact a{
 color:#333;
-text-decoration:none;
 }
 
 footer{
-padding:50px;
+margin-top:60px;
+padding:40px;
 background:#222;
 color:white;
 text-align:center;
-margin-top:80px;
 }
 
 </style>
@@ -141,21 +153,16 @@ margin-top:80px;
 <body>
 
 <nav>
-#about
-#portfolioPortfolio</a>
-#contact>
+#aboutAbout</a>
+#portfolio
+contact">Contact</a>
 </nav>
 
 <section class="hero">
-
-<div class="hero-box">
-
+<div class="hero-content">
 <h1>A CORE MEMORY</h1>
-
 <p>Capturing the moments that shape a lifetime.</p>
-
 </div>
-
 </section>
 
 <section id="about">
@@ -177,7 +184,7 @@ I believe that certain memories stay with us forever — the quiet beginnings, t
 <br>
 
 <p>
-Specializing in newborn, maternity, couple, and portrait photography in Berlin, I focus on creating authentic images filled with warmth, connection, and emotion.
+Specializing in newborn, family, couple, and portrait photography in Berlin, I focus on creating authentic images filled with warmth, connection, and emotion.
 </p>
 
 <br>
@@ -197,23 +204,23 @@ As a mobile photographer, I come to your home or a location that feels meaningfu
 <div class="portfolio-grid">
 
 newborn.html
-newborn-cover.jpg
-<span>NEWBORN</span>
+born-cover.jpg" alt="Newborn">
+<div class="label">NEWBORN</div>
 </a>
 
-maternity.html
-Maternity-cover.jpg
-<span>MATERNITY</span>
+" class="portfolio-item">
+Maternity-cover.jpg="Maternity">
+<div class="label">MATERNITY</div>
 </a>
 
-couples.html">
+couples.html
 couple-cover.jpg
-<span>COUPLES</span>
+<div class="label">COUPLES</div>
 </a>
 
-.html" class="portfolio-item">
-portrait-cover.jpg
-<span>PORTRAITS</span>
+portraits.html" class="portfolio-item">
+" alt="Portraits">
+<div class="label">PORTRAITS</div>
 </a>
 
 </div>
@@ -227,13 +234,19 @@ portrait-cover.jpg
 <h2>Contact</h2>
 
 <p>
-I'd love to hear from you.
+I'd love to hear your story.
 </p>
 
 <br>
 
 <p>
-Whether you're expecting a little one, planning a couple session, looking for portraits, or have a special photography idea in mind, I'm always happy to discuss custom photography requests.
+Whether you're expecting a little one, planning a couple session, looking for portraits, or have a unique photography idea in mind, I'd be delighted to create something meaningful together.
+</p>
+
+<br>
+
+<p>
+Custom photography requests are always welcome.
 </p>
 
 <br>
@@ -245,7 +258,10 @@ Whether you're expecting a little one, planning a couple session, looking for po
 <br>
 
 <p>
-📷 <a href="https://www.instagram.com/a.core.memory/" target="_blank">@a.core.memory</a>
+📷
+<a href="https://www.instagram.com/a.core.memory/" target="_blank">
+@a.core.memory
+</a>
 </p>
 
 </div>
@@ -255,10 +271,12 @@ Whether you're expecting a little one, planning a couple session, looking for po
 <footer>
 
 <p>A CORE MEMORY</p>
-<p>Capturing the moments that shape a lifetime.</p>
+
+<p>
+Capturing the moments that shape a lifetime.
+</p>
 
 </footer>
 
 </body>
 </html>
-``
