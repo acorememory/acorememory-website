@@ -1,1 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Georgia, serif;
+}
+
+.hero {
+    height: 100vh;
+    background: url('Hero.jpg') center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box {
+    background: rgba(255,255,255,0.85);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
