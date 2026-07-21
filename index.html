@@ -1,100 +1,138 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>A CORE MEMORY</title>
 
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="httpsorder-box;
 }
 
 body{
-font-family: "Georgia", serif;
+font-family: Georgia, serif;
 background:#faf8f5;
 color:#333;
-line-height:1.6;
+line-height:1.7;
+}
+
+nav{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(255,255,255,0.95);
+backdrop-filter:blur(10px);
+padding:20px;
+z-index:1000;
+text-align:center;
+}
+
+nav a{
+text-decoration:none;
+color:#333;
+margin:0 15px;
+font-size:14px;
+letter-spacing:2px;
+text-transform:uppercase;
 }
 
 .hero{
 height:100vh;
-background:url('Datilsfoto Baby.jpg') center center/cover;
+background:url('Hero.jpg') center center/cover;
 display:flex;
-align-items:center;
 justify-content:center;
+align-items:center;
 text-align:center;
 }
 
-.hero-content{
+.hero-box{
 background:rgba(255,255,255,0.75);
-padding:40px;
+padding:50px;
 border-radius:20px;
 }
 
 .hero h1{
 font-size:4rem;
-letter-spacing:8px;
+letter-spacing:6px;
+margin-bottom:10px;
 }
 
 .hero p{
-margin-top:10px;
-font-size:1.2rem;
+font-size:1.1rem;
 }
 
 section{
 max-width:1200px;
 margin:auto;
-padding:80px 20px;
+padding:100px 25px;
 }
 
 h2{
-text-align:center;
-margin-bottom:30px;
 font-size:2rem;
+text-align:center;
+margin-bottom:40px;
 }
 
 .about{
-max-width:700px;
+max-width:850px;
 margin:auto;
 text-align:center;
 }
 
-.gallery{
+.portfolio-grid{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 }
 
-.gallery img{
+.portfolio-item{
+position:relative;
+overflow:hidden;
+border-radius:16px;
+}
+
+.portfolio-item img{
 width:100%;
-height:350px;
+height:450px;
 object-fit:cover;
-border-radius:15px;
+display:block;
+}
+
+.portfolio-item span{
+position:absolute;
+bottom:0;
+left:0;
+right:0;
+background:rgba(0,0,0,0.45);
+color:white;
+padding:20px;
+text-align:center;
+font-size:1.1rem;
+letter-spacing:2px;
+}
+
+.portfolio-item{
+text-decoration:none;
 }
 
 .contact{
 text-align:center;
+max-width:700px;
+margin:auto;
 }
 
-.button{
-display:inline-block;
-padding:12px 24px;
-background:#b89f7a;
-color:white;
+.contact a{
+color:#333;
 text-decoration:none;
-border-radius:8px;
-margin-top:20px;
 }
 
 footer{
+padding:50px;
 background:#222;
 color:white;
 text-align:center;
-padding:30px;
+margin-top:80px;
 }
 
 </style>
@@ -102,65 +140,125 @@ padding:30px;
 
 <body>
 
-<div class="hero">
-<div class="hero-content">
+<nav>
+#about
+#portfolioPortfolio</a>
+#contact>
+</nav>
+
+<section class="hero">
+
+<div class="hero-box">
+
 <h1>A CORE MEMORY</h1>
-<p>Portrait • Maternity • Newborn • Family</p>
-</div>
+
+<p>Capturing the moments that shape a lifetime.</p>
+
 </div>
 
-<section>
-<h2>Willkommen</h2>
+</section>
+
+<section id="about">
+
+<h2>About</h2>
 
 <div class="about">
+
 <p>
-Die schönsten Erinnerungen verdienen mehr als einen Platz auf dem Smartphone.
-Mit A CORE MEMORY halte ich echte Momente fest – von Schwangerschaft und Newborn-Shootings bis hin zu Familien- und Portraitfotografie.
+A CORE MEMORY is all about capturing the moments that shape our lives.
 </p>
+
+<br>
+
+<p>
+I believe that certain memories stay with us forever — the quiet beginnings, the deep connections, and the fleeting moments that become part of who we are. These are the moments I love to preserve through natural and timeless photography.
+</p>
+
+<br>
+
+<p>
+Specializing in newborn, maternity, couple, and portrait photography in Berlin, I focus on creating authentic images filled with warmth, connection, and emotion.
+</p>
+
+<br>
+
+<p>
+As a mobile photographer, I come to your home or a location that feels meaningful to you, allowing you to relax and simply enjoy the moment while I turn it into a lasting memory.
+</p>
+
 </div>
+
 </section>
 
-<section>
+<section id="portfolio">
+
 <h2>Portfolio</h2>
 
-<div class="gallery">
-1.jpg
-.jpg">
-34.jpg
-.jpg">
-11-56-37.jpg">
+<div class="portfolio-grid">
+
+newborn.html
+newborn-cover.jpg
+<span>NEWBORN</span>
+</a>
+
+maternity.html
+Maternity-cover.jpg
+<span>MATERNITY</span>
+</a>
+
+couples.html">
+couple-cover.jpg
+<span>COUPLES</span>
+</a>
+
+.html" class="portfolio-item">
+portrait-cover.jpg
+<span>PORTRAITS</span>
+</a>
+
 </div>
 
 </section>
 
-<section class="about">
-<h2>Über mich</h2>
+<section id="contact">
+
+<div class="contact">
+
+<h2>Contact</h2>
 
 <p>
-Hallo, ich bin Jennifer.
-Mein Ziel ist es, zeitlose Erinnerungen zu schaffen, die auch Jahre später noch berühren.
-Ich liebe natürliche Bilder voller Wärme, Nähe und echter Emotionen.
+I'd love to hear from you.
 </p>
 
-</section>
+<br>
 
-<section class="contact">
+<p>
+Whether you're expecting a little one, planning a couple session, looking for portraits, or have a special photography idea in mind, I'm always happy to discuss custom photography requests.
+</p>
 
-<h2>Kontakt</h2>
+<br>
 
-<p>E-Mail: deine@email.de</p>
+<p>
+📧 contact@acorememory.de
+</p>
 
-<p>Instagram: @acorememory</p>
+<br>
 
-https://instagram.com/acorememory
-Instagram ansehen
-</a>
+<p>
+📷 <a href="https://www.instagram.com/a.core.memory/" target="_blank">@a.core.memory</a>
+</p>
+
+</div>
 
 </section>
 
 <footer>
-© A CORE MEMORY
+
+<p>A CORE MEMORY</p>
+<p>Capturing the moments that shape a lifetime.</p>
+
 </footer>
 
 </body>
 </html>
+``
